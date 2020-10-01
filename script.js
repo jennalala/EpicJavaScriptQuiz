@@ -2,27 +2,27 @@ var myQuestions = [
     {
       title: "Commonly used data types DO NOT include:",
       choices: ["Strings", "Booleans", "Alerts", "Numbers"],
-      answer: var = true "Alerts"
+      answer: "Alerts"
     },
     {
       title: "Arrays in JavaScript can be used to store ____.",
       choices: ["Numbers and strings", "Other arrays", "Booleans", "All of the above"],
-      answer: var = true "All of the above"
+      answer: "All of the above"
     },
     {
       title: "A very useful tool used during development and debugging for printing content to the debugger is:",
       choices: ["JavaScript", "Terminal / Bash", "For loops", "Console.log"],
-      answer: var = true "Console.log"
+      answer: "Console.log"
     },
     {
       title: "The condition in an if / else statement is enclosed within ______.",
       choices: ["Quotes", "Curly brackets", "Parentheses", "Square brackets"],
-      answer: var = true "Parentheses"
+      answer: "Parentheses"
     },
     {
       title: "String values must be enclosed within ____ when being assigned to variables.",
       choices: ["Commas", "Curly brackets", "Quotes", "Parentheses"],
-      answer: var = true "Quotes"
+      answer: "Quotes"
     },
   ];
 

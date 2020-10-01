@@ -36,7 +36,20 @@ function displayQuestion() {
 }
 
 function check() {
-  // check if answer right etc
+    // these aren't working..makes you unable to go to next question-figure out why
+//if (choices = answer)
+ //   { "Correct"
+ //} else {
+   // "incorrect"
+//}
+    
+   // if (myQuestions = answer){
+    //   "correct!"
+    //  } else {
+   //     "incorrect"
+   //   }
+
+    // if clicked correct display correct
   index++
   displayQuestion();
 }

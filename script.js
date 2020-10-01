@@ -1,4 +1,30 @@
-console.log(myQuestions);
+var myQuestions = [
+    {
+      title: "Commonly used data types DO NOT include:",
+      choices: ["Strings", "Booleans", "Alerts", "Numbers"],
+      answer: "Alerts"
+    },
+    {
+      title: "Arrays in JavaScript can be used to store ____.",
+      choices: ["Numbers and strings", "Other arrays", "Booleans", "All of the above"],
+      answer: "All of the above"
+    },
+    {
+      title: "A very useful tool used during development and debugging for printing content to the debugger is:",
+      choices: ["JavaScript", "Terminal / Bash", "For loops", "Console.log"],
+      answer: "Console.log"
+    },
+    {
+      title: "The condition in an if / else statement is enclosed within ______.",
+      choices: ["Quotes", "Curly brackets", "Parentheses", "Square brackets"],
+      answer: "Parentheses"
+    },
+    {
+      title: "String values must be enclosed within ____ when being assigned to variables.",
+      choices: ["Commas", "Curly brackets", "Quotes", "Parentheses"],
+      answer: "Quotes"
+    },
+  ];
 
 var startPage = document.getElementById("startPage");
 var questionsPage = document.getElementById("questionsPage");
@@ -11,11 +37,11 @@ var index = 0;
 startPage.addEventListener("click", function () {
   startPage.classList.add("hide");
   questionsPage.classList.remove("hide");
-  displayQuestion();
+ displayQuestion();
 });
 
 function displayQuestion() {
-  questionsPage.innerHTML = "";
+ questionsPage.innerHTML = "";
   var currentQ = myQuestions[index];
 
   console.log(currentQ);
@@ -36,12 +62,12 @@ function displayQuestion() {
 }
 
 function check() {
-    // these aren't working..makes you unable to go to next question-figure out why
-//if (choices = answer)
- //   { "Correct"
- //} else {
-   // "incorrect"
-//}
+//     // these aren't working..makes you unable to go to next question-figure out why
+// if (choices = answer)
+//    { "Correct"
+//  } else {
+//    "incorrect"
+// }
     
    // if (myQuestions = answer){
     //   "correct!"
@@ -49,7 +75,7 @@ function check() {
    //     "incorrect"
    //   }
 
-    // if clicked correct display correct
+//     // if clicked correct display correct
   index++
   displayQuestion();
 }

@@ -1,58 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Javascript Code Quiz</title>
+    <link
+      rel="stylesheet"
+      href="script.js"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Javascript Code Quiz</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="" />
+  </head>
 
-  <ul class="nav">
-    <li class="nav-item">
-      <a class="nav-link active scores" href="highscores.html">View Highscores</a>
-    </li>
+  <body>
+    <div class="navbar bg-light">
+      <div class="container">
+        <a href="highscores.html"> View Highscores </a>
 
-    <div id="clockdiv"> Time: <span class="seconds"></span></div>
-  </ul>
-</head>
-
-<body>
-  <div class="wrapper">
-    <h1 id="question-number">The Most Epic JavaScript Quiz</h1>
-    <div id="card">
-      <div id="quiz-container" class="start-screen">
-          <p>
-         Test The Depth Of Your Knowledge !
-            <br>
-            <br>
-            75 seconds on the clock - Can you answer all the questions before the time runs out? Do you have what it takes to put your name in the highscore hall of fame?!
-          </p>
-          <button id="start">Test Your Knowledge</button>
-
-          <div id="questions" class="hide">
-            <h2 id="question-header"></h2>
-            <div id="choices" class="choices"></div>
-          </div>
-
-            <div id="theEnd" class="hide">
-              <h2>Your Results</h2>
-              <p>Your final score is <span id="finalScore"></span>.</p>
-              <p>
-                Enter name: <input type="text" id="name" max="10" />
-                <button id="enterYourName">Submit</button></button>
-              </p>
-            </div>
+        <div>Time: <span class="seconds">75</span></div>
       </div>
     </div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-  <script type="text/javascript" src="script.js"></script>
-  <script type="text/javascript" src="questions.js"></script>
-</body>
+    <div class="container">
+      <div id="startPage">
+        <h1>The Most Epic JavaScript Quiz</h1>
+        <p>
+          Test The Depth Of Your Knowledge !
+          <br />
+          <br />
+          75 seconds on the clock - Can you answer all the questions before the
+          time runs out? Do you have what it takes to put your name in the
+          highscore hall of fame?!
+        </p>
+        <button class="btn btn-primary" id="startQuiz">
+          Test Your Knowledge
+        </button>
+      </div>
 
+      <div id="questionsPage" class="hide">
+        QUIZ
+      </div>
+
+      <div id="highscoresPage" class="hide">
+        <h2>Your Results</h2>
+        <p>Your final score is <span id="finalScore"></span>.</p>
+        <p>
+          Enter name: <input type="text" id="name" max="10" />
+          <button id="enterYourName">Submit</button>
+        </p>
+      </div>
+
+    <scripsrc="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script type="text/javascript" src="questions.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>

@@ -29,23 +29,6 @@ function startTimer() {
   }, 1 * 1000);
 }
 
-// function startTimer() {
-//   interval = setInterval(function () {
-//     timeLeft--;
-//     seconds.textContent = timeLeft;
-//     console.log(ids)
-
-//     if(timeLeft === 0){
-//       for(const id of ids){
-//         clearInterval(id)
-//       }
-//     }
-
-//   }, 1 * 1000);
-
-//   ids.push(interval)
-// }
-
 function displayQuestion() {
   questionsPage.innerHTML = "";
   var currentQ = myQuestions[index];
@@ -141,9 +124,3 @@ function getLS() {
 function setLS(data) {
   localStorage.setItem(KEY, JSON.stringify(data));
 }
-
-
-var x = 'x'
-var y = 'y'
-
-console.log(x + ' - '+ y)

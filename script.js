@@ -1,3 +1,8 @@
+// var startPage = document.getElementById("startPage");
+// var questionsPage = document.getElementById("questionsPage");
+// var highscoresPage = document.getElementById("highscoresPage");
+// var startQuiz = document.getElementById("startQuiz");
+
 var index = 0;
 var timeLeft = 75;
 var interval;
@@ -28,6 +33,23 @@ function startTimer() {
     }
   }, 1 * 1000);
 }
+
+// function startTimer() {
+//   interval = setInterval(function () {
+//     timeLeft--;
+//     seconds.textContent = timeLeft;
+//     console.log(ids)
+
+//     if(timeLeft === 0){
+//       for(const id of ids){
+//         clearInterval(id)
+//       }
+//     }
+
+//   }, 1 * 1000);
+
+//   ids.push(interval)
+// }
 
 function displayQuestion() {
   questionsPage.innerHTML = "";
@@ -124,3 +146,9 @@ function getLS() {
 function setLS(data) {
   localStorage.setItem(KEY, JSON.stringify(data));
 }
+
+
+var x = 'x'
+var y = 'y'
+
+console.log(x + ' - '+ y)

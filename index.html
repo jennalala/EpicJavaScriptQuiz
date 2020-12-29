@@ -5,22 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Javascript Code Quiz</title>
-    <link
-      rel="stylesheet"
-      href="script.js"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="style.css" />
-
   </head>
 
   <body>
     <div class="navbar bg-light">
       <div class="container">
-        <a href="highscores.html"> View Highscores </a>
-
-        <div>Time: <span class="seconds">75</span></div>
+        <div id="view_highscores">View High Scores!</div>
+        <div id="view_startpage" class="hide">View Start Page!</div>
+        <div>Time: <span id="seconds">75</span></div>
+        <div>Score: <span id="currentscore">0</span></div>
       </div>
     </div>
 
@@ -40,25 +34,22 @@
         </button>
       </div>
 
-      <div id="questionsPage" class="hide">
-        QUIZ
-      </div>
+      <div id="questionsPage" class="hide">QUIZ</div>
 
       <div id="highscoresPage" class="hide">
         <h2>Your Results</h2>
         <p>Your final score is <span id="finalScore"></span>.</p>
-        <p>
-          Enter name: <input type="text" id="name" max="10" />
+        <p id="scoreForm">
+          Enter name: <input type="text" id="user_name" max="10" />
           <button id="enterYourName">Submit</button>
         </p>
-      </div>
 
-    <scrip src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
+        <ol id="highscore_list"></ol>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <script type="text/javascript" src="questions.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="_script.js"></script>
   </body>
 </html>
